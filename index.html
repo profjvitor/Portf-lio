@@ -4,241 +4,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Meu Portfólio</title>
 </head>
 
-<body>
-  <header class="container text-center">
-    <img src="img/avatar-perfil.jpg" alt="avatar do João" class="rounded-circle" width="150" height="150" srcset="">
-    <p class="lead">Eu sou João</p>
-    <h1>Eu ensino Biologia</h1>
-    <p>Sou Biológo, formado pela UFSCar - Sorocaba. Ensino Biologia, Ciências e Química para estudantes do Ensino
-      Fundamental e Médio. Também ensino Programação usando a plataforma Alura. Veja os projetos que já desenvolvi!
-    </p>
-    <p>Minhas Habilidades</p>
-    <div>
-      <p class="badge text-bg-secondary">HTML</p>
-      <p class="badge text-bg-secondary">CSS</p>
-      <p class="badge text-bg-secondary">JavaScript</p>
-      <p class="badge text-bg-secondary">Scratch</p>
-      <p class="badge text-bg-secondary">Office365</p>
+<body class="bg-light">
+  <header class="container text-center py-5">
+    <img src="img/avatar-perfil.jpg" alt="avatar do João" class="rounded-circle shadow" width="150" height="150">
+    <h1 class="mt-3 fw-bold text-primary">João Vítor</h1>
+    <p class="lead text-secondary">Sou biólogo, formado pela UFSCar - Sorocaba. Ensino Biologia, Ciências, Química e Programação. Confira meus projetos!</p>
+    <div class="d-flex justify-content-center gap-2 flex-wrap">
+      <span class="badge rounded-pill text-bg-primary">HTML</span>
+      <span class="badge rounded-pill text-bg-primary">CSS</span>
+      <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+      <span class="badge rounded-pill text-bg-primary">Scratch</span>
+      <span class="badge rounded-pill text-bg-primary">Office365</span>
     </div>
   </header>
-  <main class="container mt-5">
-    <h2>Meus Projetos</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card" style="width: 70rem;">
-          <div class="card-group">
-            <!-- Projeto 1 -->
-            <div class="card">
-              <img src="img/projeto-1.png" class="card-img-top" alt=" Imagem do Projeto de Biblioteca de
-                Clipes">
-              <div class="card-body">
-                <h5 class="card-title">KBEATFLIX</h5>
-                <p class="card-text">Conheça o vasto universo do Kpop Feminino a partir de uma página que apresenta
-                  clipes dos principais grupos e artistas de cada geração.</p>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o
-                  projeto</button>
-              </div>
-            </div>
-            <!-- Projeto 2 -->
-            <div class="card">
-              <img src="img/projeto-2.png" class="card-img-top" height="200 alt=" Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Selecionador de Filmes da Marvel</h5>
-                <p class="card-text">Selecionador de Filmes da Marvel é uma aplicação web simples feita com HTML, CSS e
-                  JavaScript puro. Ela permite ao usuário explorar uma seleção de filmes clássicos da Marvel por meio
-                  de um filtro interativo por franquia.</p>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o
-                  projeto</button>
-              </div>
-            </div>
-            <!-- Projeto 3 -->
-            <div class="card">
-              <img src="img/projeto-3.png" class="card-img-top" height="200 alt=" ...">
-              <div class="card-body">
-                <h5 class="card-title">Amor em Sintonia</h5>
-                <p class="card-text">Leo e Rafael se conhecem por acaso no show da Lady Gaga no Rio. A conexão é
-                  imediata, mas a jornada não será fácil. O jogo vai explorar decisões importantes, como inseguranças e
-                  coragem de assumir sentimentos.</p>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">
-                  Veja o projeto
-                </button>
-              </div>
-            </div>
+
+  <main class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Meus Projetos</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Projeto 1 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projeto-1.png" class="card-img-top rounded-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title text-primary">KBEATFLIX</h5>
+            <p class="card-text">Explore o universo do Kpop Feminino em uma página com clipes e informações das principais gerações.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">Ver projeto</button>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projeto-2.png" class="card-img-top rounded-top" alt="Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Selecionador de Filmes da Marvel</h5>
+            <p class="card-text">Uma aplicação simples para explorar filmes clássicos da Marvel com filtro por franquia.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">Ver projeto</button>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 3 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projeto-3.png" class="card-img-top rounded-top" alt="Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Amor em Sintonia</h5>
+            <p class="card-text">Um jogo interativo que explora relacionamentos e decisões importantes.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">Ver projeto</button>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Modal 1 -->
-  <div class="modal" id="modal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">KBEATFLIX: Uma WebPage</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            O projeto é uma página web criada com HTML e CSS, destinada a exibir uma
-            coleção pessoal de livros favoritos. O objetivo é criar um ambiente virtual
-            onde seja possível compartilhar seus livros preferidos, fornecendo uma
-            descrição breve de cada um, incluindo o autor, o ano de publicação e uma
-            opção de compra.
-          </p>
-          <p>
-            A estrutura do site é baseada em HTML, que define a semântica e o layout do
-            conteúdo, enquanto o CSS é usado para estilizar a página visualmente,
-            incluindo cores, tipografia e a disposição dos elementos.
-          </p>
-          <p>
-            O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por
-            uma divisão principal (.container) que apresenta o propósito do site e a
-            coleção de livros em uma seção flexível (.livros). Cada livro é destacado em
-            seu próprio contêiner (.livro), mostrando uma imagem da capa, detalhes do
-            livro e um link de compra. O design responsivo é garantido pelo uso de uma
-            meta tag viewport e um layout flexível que se adapta a diferentes tamanhos
-            de tela.
-          </p>
-          <p>
-            O CSS personaliza o visual do site, usando variáveis para cores, estilizando
-            o texto com uma fonte importada do Google Fonts e aplicando um esquema de
-            cores suaves e botões interativos. O uso de HTML e CSS é importante pois
-            assim é possível criar um site acessível e esteticamente agradável sem a
-            necessidade de scripts complexos, com foco na usabilidade e na experiência
-            da pessoa usuária. A escolha da tipografia e do esquema de cores contribui
-            para a atmosfera acolhedora do site, incentivando a exploração da coleção de
-            livros.
-          </p>
-          <img src="img/projeto-1.png" alt="Imagem representativa do projeto de um jogo interativo" />
-        </div>
-        <div class="modal-footer">
-          <a href="https://profjvitor.github.io/KBEATFLIX/">Ver projeto ao vivo</a>
-          <a href="https://github.com/profjvitor/KBEATFLIX">Ver código do projeto</a>
-        </div>
+ <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">KBEATFLIX: Uma WebPage</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Conheça o KBEATFLIX, uma página web criada com HTML e CSS para explorar o universo do Kpop feminino.
+          Apresenta clipes, informações e uma interface visual leve e responsiva.
+        </p>
+        <img src="img/projeto-1.png" class="img-fluid w-100 rounded my-3" alt="Imagem do projeto KBEATFLIX" />
+      </div>
+      <div class="modal-footer">
+        <a href="https://profjvitor.github.io/KBEATFLIX/" target="_blank" class="btn btn-primary">Ver projeto ao vivo</a>
+        <a href="https://github.com/profjvitor/KBEATFLIX" target="_blank" class="btn btn-outline-secondary">Ver código no GitHub</a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Modal 2 -->
-  <div class="modal" id="modal2" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Marvel Selector: Um Filtro de Filmes</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            O projeto é uma página web criada com HTML e CSS, destinada a exibir uma
-            coleção pessoal de livros favoritos. O objetivo é criar um ambiente virtual
-            onde seja possível compartilhar seus livros preferidos, fornecendo uma
-            descrição breve de cada um, incluindo o autor, o ano de publicação e uma
-            opção de compra.
-          </p>
-          <p>
-            A estrutura do site é baseada em HTML, que define a semântica e o layout do
-            conteúdo, enquanto o CSS é usado para estilizar a página visualmente,
-            incluindo cores, tipografia e a disposição dos elementos.
-          </p>
-          <p>
-            O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por
-            uma divisão principal (.container) que apresenta o propósito do site e a
-            coleção de livros em uma seção flexível (.livros). Cada livro é destacado em
-            seu próprio contêiner (.livro), mostrando uma imagem da capa, detalhes do
-            livro e um link de compra. O design responsivo é garantido pelo uso de uma
-            meta tag viewport e um layout flexível que se adapta a diferentes tamanhos
-            de tela.
-          </p>
-          <p>
-            O CSS personaliza o visual do site, usando variáveis para cores, estilizando
-            o texto com uma fonte importada do Google Fonts e aplicando um esquema de
-            cores suaves e botões interativos. O uso de HTML e CSS é importante pois
-            assim é possível criar um site acessível e esteticamente agradável sem a
-            necessidade de scripts complexos, com foco na usabilidade e na experiência
-            da pessoa usuária. A escolha da tipografia e do esquema de cores contribui
-            para a atmosfera acolhedora do site, incentivando a exploração da coleção de
-            livros.
-          </p>
-          <img src="img/projeto-2.png" alt="Imagem representativa do projeto de um jogo interativo" />
-        </div>
-        <div class="modal-footer">
-          <a href="https://profjvitor.github.io/marvel-selector/">Ver projeto ao vivo</a>
-          <a href="https://github.com/profjvitor/marvel-selector">Ver código do projeto</a>
-        </div>
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Marvel Selector: Um Filtro de Filmes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          O Marvel Selector é uma aplicação web interativa para explorar filmes do universo Marvel, feita com HTML, CSS e JavaScript puro.
+          Filtre os filmes por franquia e divirta-se com uma navegação simples e intuitiva.
+        </p>
+        <img src="img/projeto-2.png" class="img-fluid w-100 rounded my-3" alt="Imagem do Marvel Selector" />
+      </div>
+      <div class="modal-footer">
+        <a href="https://profjvitor.github.io/marvel-selector/" target="_blank" class="btn btn-primary">Ver projeto ao vivo</a>
+        <a href="https://github.com/profjvitor/marvel-selector" target="_blank" class="btn btn-outline-secondary">Ver código no GitHub</a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Modal 3 -->
-  <div class="modal" id="modal3" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Amor em Sintonia: Um Jogo Interativo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            O projeto é uma página web criada com HTML e CSS, destinada a exibir uma
-            coleção pessoal de livros favoritos. O objetivo é criar um ambiente virtual
-            onde seja possível compartilhar seus livros preferidos, fornecendo uma
-            descrição breve de cada um, incluindo o autor, o ano de publicação e uma
-            opção de compra.
-          </p>
-          <p>
-            A estrutura do site é baseada em HTML, que define a semântica e o layout do
-            conteúdo, enquanto o CSS é usado para estilizar a página visualmente,
-            incluindo cores, tipografia e a disposição dos elementos.
-          </p>
-          <p>
-            O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por
-            uma divisão principal (.container) que apresenta o propósito do site e a
-            coleção de livros em uma seção flexível (.livros). Cada livro é destacado em
-            seu próprio contêiner (.livro), mostrando uma imagem da capa, detalhes do
-            livro e um link de compra. O design responsivo é garantido pelo uso de uma
-            meta tag viewport e um layout flexível que se adapta a diferentes tamanhos
-            de tela.
-          </p>
-          <p>
-            O CSS personaliza o visual do site, usando variáveis para cores, estilizando
-            o texto com uma fonte importada do Google Fonts e aplicando um esquema de
-            cores suaves e botões interativos. O uso de HTML e CSS é importante pois
-            assim é possível criar um site acessível e esteticamente agradável sem a
-            necessidade de scripts complexos, com foco na usabilidade e na experiência
-            da pessoa usuária. A escolha da tipografia e do esquema de cores contribui
-            para a atmosfera acolhedora do site, incentivando a exploração da coleção de
-            livros.
-          </p>
-          <img src="img/projeto-3.png" alt="Imagem representativa do projeto de um jogo interativo" />
-        </div>
-        <div class="modal-footer">
-          <a href="https://profjvitor.github.io/Amor-em-Sintonia/">Ver projeto ao vivo</a>
-          <a href="https://github.com/profjvitor/Amor-em-Sintonia">Ver código do projeto</a>
-        </div>
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Amor em Sintonia: Um Jogo Interativo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Amor em Sintonia é um jogo interativo que conta a história de Leo e Rafael. Desenvolvido com HTML, CSS e lógica interativa, ele explora decisões e caminhos emocionantes para o casal.
+        </p>
+        <img src="img/projeto-3.png" class="img-fluid w-100 rounded my-3" alt="Imagem do jogo Amor em Sintonia" />
+      </div>
+      <div class="modal-footer">
+        <a href="https://profjvitor.github.io/Amor-em-Sintonia/" target="_blank" class="btn btn-primary">Ver projeto ao vivo</a>
+        <a href="https://github.com/profjvitor/Amor-em-Sintonia" target="_blank" class="btn btn-outline-secondary">Ver código no GitHub</a>
       </div>
     </div>
   </div>
+</div>
 
-  <footer class="container py-5">
-    <h2>Entre em contato</h2>
-    <div>
-      <i class="bi bi-github"></i>
-      <a href="https://github.com/profjvitor">GitHub</a>
-      <a href=”mailto:jvitorandrade@prof.educacao.sp.gov.br”>Email</a>
+
+  <footer class="container py-4 text-center text-secondary">
+    <h2 class="fw-bold text-primary">Entre em contato</h2>
+    <div class="my-3">
+      <a href="https://github.com/profjvitor" class="text-decoration-none text-secondary mx-2"><i class="bi bi-github"></i> GitHub</a>
+      <a href="mailto:jvitorandrade@prof.educacao.sp.gov.br" class="text-decoration-none text-secondary mx-2"><i class="bi bi-envelope-fill"></i> Email</a>
     </div>
-    <p class="my-5 text-center">© Copyright 2025. Produzido por João Vítor de Andrade Marcelino.</p>
+    <p class="small">&copy; 2025 João Vítor de Andrade Marcelino. Todos os direitos reservados.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
